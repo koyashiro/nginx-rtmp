@@ -27,4 +27,6 @@ RUN ./configure \
 
 FROM nginx:1.21.6
 
+LABEL maintainer 'koyashiro <develop@koyashi.ro>'
+
 COPY --from=build /build/ngx_rtmp_module.so /usr/lib/nginx/modules/ngx_rtmp_module.so
