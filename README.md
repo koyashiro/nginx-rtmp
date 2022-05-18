@@ -1,4 +1,4 @@
-# nginx-rtmp
+# nginx-rtmp-module-docker
 
 [Nginx](https://hub.docker.com/_/nginx) image with [nginx-rtmp-module](https://github.com/arut/nginx-rtmp-module).
 
