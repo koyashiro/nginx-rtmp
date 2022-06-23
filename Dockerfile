@@ -1,6 +1,6 @@
 FROM debian:11.3 AS build
 
-ENV NGINX_VERSION=1.22.0
+ENV NGINX_VERSION=1.23.0
 ENV NGINX_RTMP_MODULE_VERSION=1.2.2
 
 RUN apt-get update \
@@ -25,7 +25,7 @@ RUN ./configure \
   && make modules \
   && cp objs/ngx_rtmp_module.so /build/ngx_rtmp_module.so
 
-FROM nginx:1.22.0
+FROM nginx:1.23.0
 
 LABEL maintainer 'koyashiro <develop@koyashi.ro>'
 
