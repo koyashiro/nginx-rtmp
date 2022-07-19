@@ -25,7 +25,7 @@ RUN ./configure \
   && make modules \
   && cp objs/ngx_rtmp_module.so /build/ngx_rtmp_module.so
 
-FROM nginx:1.23.0
+FROM nginx:1.23.1
 
 LABEL maintainer 'koyashiro <develop@koyashi.ro>'
 
